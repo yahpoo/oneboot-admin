@@ -22,6 +22,7 @@
         <oneboot.version>1.0-SNAPSHOT</oneboot.version>
         <enjoy.version>3.6</enjoy.version>
         <fastjson.version>1.2.55</fastjson.version>
+        <mybatis-plus.version>3.1.1</mybatis-plus.version>
     </properties>
 
     <dependencyManagement>
@@ -31,10 +32,35 @@
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
             </dependency>
+
+            <!--引擎模板-->
             <dependency>
                 <groupId>com.jfinal</groupId>
                 <artifactId>enjoy</artifactId>
                 <version>${enjoy.version}</version>
+            </dependency>
+
+            <!--mybatis-plus-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>xyz.yahpoo</groupId>
+                <artifactId>oneboot-common</artifactId>
+                <version>${oneboot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>xyz.yahpoo</groupId>
+                <artifactId>oneboot-base</artifactId>
+                <version>${oneboot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>xyz.yahpoo</groupId>
+                <artifactId>oneboot-admin</artifactId>
+                <version>${oneboot.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -54,9 +80,9 @@
     </build>
 
     <modules>
-        <module>oneboot-web</module>
+        <module>oneboot-base</module>
         <module>oneboot-common</module>
         <module>oneboot-admin</module>
-        <module>oneboot-base</module>
+        <module>oneboot-web</module>
     </modules>
 </project>

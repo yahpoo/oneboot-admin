@@ -6,7 +6,10 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 
-@SpringBootApplication(scanBasePackages = "com.yahpoo.oneboot")
+/**
+ * TODO 应用程序启动入口
+ */
+@SpringBootApplication(scanBasePackages = "xyz.yahpoo.oneboot")
 @ServletComponentScan
 public class WebApplication extends SpringBootServletInitializer {
 
