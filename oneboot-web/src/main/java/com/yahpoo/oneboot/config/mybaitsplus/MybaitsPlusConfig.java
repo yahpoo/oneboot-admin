@@ -23,7 +23,7 @@ public class MybaitsPlusConfig {
      * @return
      */
     @Bean
-    @Profile("local")
+    @Profile({"local", "dev", "uat"})
     public PerformanceInterceptor performanceInterceptor(){
         return new PerformanceInterceptor();
     }
