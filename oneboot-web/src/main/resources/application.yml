@@ -1,0 +1,14 @@
+# 容器相关配置
+server:
+  context-path: /
+  port: 8080
+
+# Spring 相关配置
+spring:
+
+  # 应用名称
+  application:
+    name: oneboot-web
+
+  # 部署模式
+  profiles: ${DEPLOYMODE:local}
