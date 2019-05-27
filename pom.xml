@@ -23,6 +23,7 @@
         <enjoy.version>3.6</enjoy.version>
         <fastjson.version>1.2.55</fastjson.version>
         <mybatis-plus.version>3.1.1</mybatis-plus.version>
+        <druid.version>1.1.10</druid.version>
     </properties>
 
     <dependencyManagement>
@@ -32,21 +33,26 @@
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
             </dependency>
-
             <!--引擎模板-->
             <dependency>
                 <groupId>com.jfinal</groupId>
                 <artifactId>enjoy</artifactId>
                 <version>${enjoy.version}</version>
             </dependency>
-
             <!--mybatis-plus-->
             <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis-plus.version}</version>
             </dependency>
+            <!--druid-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
 
+            <!--子模块-->
             <dependency>
                 <groupId>xyz.yahpoo</groupId>
                 <artifactId>oneboot-common</artifactId>

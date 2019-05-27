@@ -1,1 +1,9 @@
+server:
+  port: 8080
 
+spring:
+  datasource:
+    # 填写你数据库的url、登录名、密码和数据库名
+    url: jdbc:mysql://127.0.0.1:3306/oneboot_db?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
