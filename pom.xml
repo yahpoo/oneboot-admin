@@ -21,7 +21,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <oneboot.version>1.0-SNAPSHOT</oneboot.version>
         <enjoy.version>3.6</enjoy.version>
-        <fastjson.version>1.2.55</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <mybatis-plus.version>3.1.1</mybatis-plus.version>
         <druid.version>1.1.10</druid.version>
     </properties>
